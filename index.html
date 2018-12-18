@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<a class="navbar-brand" href="#">
+    <img src="logo.png" width="120" height="40" class="d-inline-block align-top" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Our Team</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+	<div class="progress" style="height: 30px">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+  	Personal Details
+  </div><br><br>
+
+</div>
+	<div class="jumbotron">
+	<h1 align="center">Personal Details</h1>
+  <div class="alert alert-primary" role="alert" align="center">
+  Please fill your details carefully!!
+</div>
+
+<form action="part2.html">
+
+
+   <label>Full Name</label>
+  <div class="form-row">
+  	<div class="form-group>
+    <div class="col">
+    <input type="text" class="form-control form-control-sm" id="FirstName"placeholder="First Name" name="First">
+	</div>
+    <div class="col">
+    <input type="text" class="form-control form-control-sm" id="LastName" placeholder="Last Name">
+    </div>
+	</div>
+    <br>
+
+
+   <label>Father Name</label>
+   <div class="form-row">
+   	<div class="form-group>
+    <div class="col">
+    <input type="text" class="form-control form-control-sm" id="FirstName"placeholder="First Name">
+	</div>
+    <div class="col">
+    <input type="text" class="form-control form-control-sm" id="LastName" placeholder="Last Name">
+    </div>
+	</div><br>
+
+
+	<label>Gender</label>
+	<div class="form-row">
+   	<div class="form-group>
+    <div class="col">
+	<img src="https://s3.amazonaws.com/assets.mockflow.com/app/wireframepro/company/Ccd93f03b960b47acafb08dcdf807ffe6/projects/Mf0bf76458dd5804b112b57e7b71555261544440976320/images/Mf5633e04a5f88e6a1ec9c8263ad1b75c1544443777771" class="rounded float-left" alt="Male">
+	</div>
+	<div class="col">
+	<img src="https://s3.amazonaws.com/assets.mockflow.com/app/wireframepro/company/Ccd93f03b960b47acafb08dcdf807ffe6/projects/Mf0bf76458dd5804b112b57e7b71555261544440976320/images/M19314925f888ceaa1be530d87bf61dbd1544443998830" class="rounded float-right" alt="Female">
+	</div>
+	</div>
+	<br>
+
+	<label>Date of Birth</label>
+   	<div class="form-group">
+   		<input type="text" class="form-control form-control-sm" id="DOB"placeholder="DD/MM/YYYY">
+   	</div>
+
+   	<label>Nationality</label>
+   	<div class="form-group">
+   		<input type="text" class="form-control form-control-sm" id="Nationality"placeholder="Nationality">
+   	</div>
+
+   	<label>Place of Birth</label>
+   	<div class="form-group">
+   		<input type="text" class="form-control form-control-sm" placeholder="Place of Birth">
+   	</div>
+
+
+   	<div class="form-group">
+   		 <div class="form-group">
+    	<label for="exampleFormControlSelect1">Blood Group</label>
+    	<select class="form-control" id="exampleFormControlSelect1">
+      	<option>A+</option>
+      	<option>A-</option>
+      	<option>B+</option>
+      	<option>B-</option>
+      	<option>O+</option>
+      	<option>O-</option>
+      	<option>AB+</option>
+      	<option>AB-</option>
+    </select>
+  </div>
+   	</div><br>
+
+
+<label>Contact No.</label>
+<div class="form-row"
+   	<div class="form-group">
+   		<div class="col" id="no">
+   		<input type="text" class="form-control form-control-sm" placeholder="+91" style="width:50px;">
+   		</div>
+   		<div class="col">
+   		<input type="text" class="form-control form-control-sm" placeholder="10 digit number" style="width:340px;">	
+   		</div>
+   		</div><br>
+
+
+<label>UID</label>
+   	<div class="form-group">
+   		<input type="text" class="form-control form-control-sm" placeholder="UID">
+   	</div>
+
+<label>Email ID</label>
+   	<div class="form-group">
+   		<input type="email" class="form-control form-control-sm" placeholder="Email ID">
+   	</div>
+
+
+
+   	<label>Present Address</label>
+   	<div class="form-group">
+   		<input type="text" class="form-control form-control-sm" placeholder="Address Line 1"><br>
+   		<input type="text" class="form-control form-control-sm" placeholder="Address Line 2"><br>
+   	
+   	<div class="form-row"
+   	<div class="form-group">
+   		<div class="col">
+   		<input type="text" class="form-control form-control-sm" placeholder="City" >
+   		</div>
+   		<div class="col">
+   		<input type="text" class="form-control form-control-sm" placeholder="State/Province">	
+   		</div>
+   		</div><br>
+
+
+   		<div class="form-row"
+   	<div class="form-group">
+   		<div class="col">
+   		<input type="text" class="form-control form-control-sm" placeholder="Postal/Zip">
+   		</div>
+   		<div class="col">
+   		<select class="form-control">
+      	<option>Select Country</option>
+      	<option>India</option>
+      	<option>France</option>
+      	<option>USA</option>
+      	<option>Germany</option>
+    	</select>	
+   		</div>
+   		</div>
+
+   	</div><br>
+
+
+
+   	<label>Permanent Address</label>
+   	<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Same as Above
+  </label>
+</div>
+
+
+   	<div class="form-group">
+   		<input type="text" class="form-control form-control-sm" placeholder="Address Line 1"><br>
+   		<input type="text" class="form-control form-control-sm" placeholder="Address Line 2"><br>
+   	
+   	<div class="form-row"
+   	<div class="form-group">
+   		<div class="col">
+   		<input type="text" class="form-control form-control-sm" placeholder="City" >
+   		</div>
+   		<div class="col">
+   		<input type="text" class="form-control form-control-sm" placeholder="State/Province">	
+   		</div>
+   		</div><br>
+
+
+   		<div class="form-row"
+   	<div class="form-group">
+   		<div class="col">
+   		<input type="text" class="form-control form-control-sm" placeholder="Postal/Zip">
+   		</div>
+   		<div class="col">
+   		<select class="form-control">
+      	<option>Select Country</option>
+      	<option>India</option>
+      	<option>France</option>
+      	<option>USA</option>
+      	<option>Germany</option>
+    	</select>	
+   		</div>
+   		</div>
+
+   	</div>
+
+<label>Languages Known</label>
+   	<div class="form-group">
+   		<input type="text" class="form-control form-control-sm" placeholder="Languages">
+   	</div>
+
+<label>Marital Status</label><br>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1">Single</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2">Married</label>
+</div><br><br>
+
+<!-- <table class="table" border="5px" style="border-radius:25px">
+<tr><td> -->
+	<div class="card">
+		<div class="card-body">
+
+<label>Spouse's Name</label>
+  <div class="form-row">
+  	<div class="form-group>
+    <div class="col">
+    <input type="text" class="form-control form-control-sm" id="FirstName"placeholder="First Name">
+	</div>
+    <div class="col">
+    <input type="text" class="form-control form-control-sm" id="LastName" placeholder="Last Name">
+    </div>
+	</div><br>
+
+<label>Spouse's DOB</label>
+   	<div class="form-group">
+   		<input type="text" class="form-control form-control-sm" id="DOB"placeholder="DD/MM/YYYY">
+   	</div>
+<!-- </td></tr>
+</table> -->
+</div>
+</div>
+<br>
+<!-- <table class="table" border="5px" style="border-radius:25px">
+<tr><td> -->
+	<div class="card">
+		<div class="card-body">
+<label>No. of Children</label>
+<label class="my-1 mr-2" for="inlineFormCustomSelectPref"></label>
+  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+
+<label>Child's Name</label>
+  <div class="form-row">
+  	<div class="form-group>
+    <div class="col">
+    <input type="text" class="form-control form-control-sm" id="FirstName"placeholder="First Name">
+	</div>
+    <div class="col">
+    <input type="text" class="form-control form-control-sm" id="LastName" placeholder="Last Name">
+    </div>
+	</div><br>
+
+<label>Date of Birth</label>
+   	<div class="form-group">
+   		<input type="text" class="form-control form-control-sm" id="DOB"placeholder="DD/MM/YYYY">
+   	</div>
+   </div>
+</div>
+<!-- </td></tr></table> -->
+<br>
+
+
+<!-- Button -->
+<div align="right">
+    <!-- <a href="Part2.html"> -->
+   	<button type="submit" class="btn btn-outline-primary">Next-></button>
+    <!-- </a> -->
+    </div>
+</form>
+</div>
+</div>
+<style >
+.container-fluid {
+  margin-top: 2%;
+  height: 500px;
+  width: 500px;
+}	
+
+.rounded {
+	height: 90px;
+	width: 90px;
+	margin-left: 90%;
+	margin-right: 20%;
+}
+
+</style>
+</body>
+</html>
