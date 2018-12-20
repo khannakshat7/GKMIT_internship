@@ -60,8 +60,6 @@
     </div>
 	</div>
     <br>
-
-
    <label>Father Name</label>
    <div class="form-row">
    	<div class="form-group>
@@ -85,23 +83,18 @@
 	</div>
 	</div>
 	<br>
-
 	<label>Date of Birth</label>
    	<div class="form-group">
    		<input type="text" class="form-control form-control-sm" id="DOB"placeholder="DD/MM/YYYY">
    	</div>
-
    	<label>Nationality</label>
    	<div class="form-group">
    		<input type="text" class="form-control form-control-sm" id="Nationality"placeholder="Nationality">
    	</div>
-
    	<label>Place of Birth</label>
    	<div class="form-group">
    		<input type="text" class="form-control form-control-sm" placeholder="Place of Birth">
    	</div>
-
-
    	<div class="form-group">
    		 <div class="form-group">
     	<label for="exampleFormControlSelect1">Blood Group</label>
@@ -117,8 +110,6 @@
     </select>
   </div>
    	</div><br>
-
-
 <label>Contact No.</label>
 <div class="form-row"
    	<div class="form-group">
@@ -126,39 +117,31 @@
    		<input type="text" class="form-control form-control-sm" placeholder="+91" style="width:50px;">
    		</div>
    		<div class="col">
-   		<input type="text" class="form-control form-control-sm" placeholder="10 digit number" style="width:340px;">	
+   		<input type="text" class="form-control form-control-sm" placeholder="10 digit number" style="width:340px;">
    		</div>
    		</div><br>
-
-
 <label>UID</label>
    	<div class="form-group">
    		<input type="text" class="form-control form-control-sm" placeholder="UID">
    	</div>
-
 <label>Email ID</label>
    	<div class="form-group">
    		<input type="email" class="form-control form-control-sm" placeholder="Email ID">
    	</div>
-
-
-
    	<label>Present Address</label>
    	<div class="form-group">
    		<input type="text" class="form-control form-control-sm" placeholder="Address Line 1"><br>
    		<input type="text" class="form-control form-control-sm" placeholder="Address Line 2"><br>
-   	
+
    	<div class="form-row"
    	<div class="form-group">
    		<div class="col">
    		<input type="text" class="form-control form-control-sm" placeholder="City" >
    		</div>
    		<div class="col">
-   		<input type="text" class="form-control form-control-sm" placeholder="State/Province">	
+   		<input type="text" class="form-control form-control-sm" placeholder="State/Province">
    		</div>
    		</div><br>
-
-
    		<div class="form-row"
    	<div class="form-group">
    		<div class="col">
@@ -171,76 +154,63 @@
       	<option>France</option>
       	<option>USA</option>
       	<option>Germany</option>
-    	</select>	
+    	</select>
    		</div>
    		</div>
-
    	</div><br>
-
-
-
    	<label>Permanent Address</label>
    	<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <input class="form-check-input" id="myCheck" onclick="myFunction()" type="checkbox" value="" id="defaultCheck1">
   <label class="form-check-label" for="defaultCheck1">
     Same as Above
   </label>
 </div>
-
-
    	<div class="form-group">
-   		<input type="text" class="form-control form-control-sm" placeholder="Address Line 1"><br>
-   		<input type="text" class="form-control form-control-sm" placeholder="Address Line 2"><br>
-   	
+   		<input id="add1" type="text" class="form-control form-control-sm" placeholder="Address Line 1"><br>
+   		<input id="add2" type="text" class="form-control form-control-sm" placeholder="Address Line 2"><br>
+
    	<div class="form-row"
    	<div class="form-group">
    		<div class="col">
-   		<input type="text" class="form-control form-control-sm" placeholder="City" >
+   		<input id="add3" type="text" class="form-control form-control-sm" placeholder="City" >
    		</div>
    		<div class="col">
-   		<input type="text" class="form-control form-control-sm" placeholder="State/Province">	
+   		<input id="add4" type="text" class="form-control form-control-sm" placeholder="State/Province">
    		</div>
    		</div><br>
-
-
    		<div class="form-row"
    	<div class="form-group">
    		<div class="col">
-   		<input type="text" class="form-control form-control-sm" placeholder="Postal/Zip">
+   		<input id="add5" type="text" class="form-control form-control-sm" placeholder="Postal/Zip">
    		</div>
    		<div class="col">
-   		<select class="form-control">
+   		<select class="form-control" id="add6">
       	<option>Select Country</option>
       	<option>India</option>
       	<option>France</option>
       	<option>USA</option>
       	<option>Germany</option>
-    	</select>	
+    	</select>
    		</div>
    		</div>
-
    	</div>
-
 <label>Languages Known</label>
    	<div class="form-group">
    		<input type="text" class="form-control form-control-sm" placeholder="Languages">
    	</div>
-
 <label>Marital Status</label><br>
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <input class="form-check-input" onclick="myFunction2()" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
   <label class="form-check-label" for="inlineRadio1">Single</label>
 </div>
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <input class="form-check-input" onclick="myFunction2()" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
   <label class="form-check-label" for="inlineRadio2">Married</label>
 </div><br><br>
-
 <!-- <table class="table" border="5px" style="border-radius:25px">
 <tr><td> -->
-	<div class="card">
-		<div class="card-body">
-
+	<div class="card" id="card1" style="display: none">
+		<div class="card-body" >
 <label>Spouse's Name</label>
   <div class="form-row">
   	<div class="form-group>
@@ -263,7 +233,7 @@
 <br>
 <!-- <table class="table" border="5px" style="border-radius:25px">
 <tr><td> -->
-	<div class="card">
+	<div class="card" id="card2" style="display: none">
 		<div class="card-body">
 <label>No. of Children</label>
 <label class="my-1 mr-2" for="inlineFormCustomSelectPref"></label>
@@ -284,7 +254,6 @@
     <input type="text" class="form-control form-control-sm" id="LastName" placeholder="Last Name">
     </div>
 	</div><br>
-
 <label>Date of Birth</label>
    	<div class="form-group">
    		<input type="text" class="form-control form-control-sm" id="DOB"placeholder="DD/MM/YYYY">
@@ -293,8 +262,6 @@
 </div>
 <!-- </td></tr></table> -->
 <br>
-
-
 <!-- Button -->
 <div align="right">
     <!-- <a href="Part2.html"> -->
@@ -309,15 +276,15 @@
   margin-top: 2%;
   height: 500px;
   width: 500px;
-}	
-
+}
 .rounded {
 	height: 90px;
 	width: 90px;
 	margin-left: 90%;
 	margin-right: 20%;
 }
-
 </style>
+<script src="js.js">
+</script>
 </body>
 </html>
