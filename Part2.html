@@ -34,6 +34,8 @@
 
 
 <div class="container-fluid">
+<div class="row">
+	<div class="col">
 	<div class="progress" style="height: 30px">
   <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
   	Personal Details
@@ -49,21 +51,37 @@
   Please fill your details carefully!!
 </div>
 
-<form action="Thanku.html">
+<form action="Thanku.html" class="was-validated">
 
-   	
+
 <div class="card">
     <div class="card-body">
         <H2 align="center">Joining Details</H2>
-        <label>Designation/Work</label>
-        <div class="form-group">
-        <input type="text" class="form-control form-control-sm" placeholder="Designation">
-    </div>
+        <label>Designation/Work*</label>
+        <div class="row">
+					<div class="col">
+        <input type="text" class="form-control form-control-sm" placeholder="Designation" required>
+				<div class="valid-feedback">
+		        Looks good!
+		      </div>
+					<div class="invalid-feedback">
+			Please Enter Your Designation!
+		</div>
+			</div>
+	  </div>
 
-    <label>Date of Joining</label>
-        <div class="form-group">
-        <input type="text" class="form-control form-control-sm" placeholder="DD/MM/YYYY">
-    </div>
+    <label>Date of Joining*</label>
+        <div class="row">
+					<div class="col">
+        <input type="text" name="dateofjoin" class="form-control form-control-sm" placeholder="DD/MM/YYYY" required>
+				<div class="valid-feedback">
+		        Looks good!
+		      </div>
+					<div class="invalid-feedback">
+			Please Enter Date of Joining!
+		</div>
+			</div>
+		</div>
     </div>
 </div><br>
 
@@ -72,31 +90,55 @@
 <div class="card">
     <div class="card-body">
         <H2 align="center">Emergency Contact Details</H2>
-        <label>Person's Name</label>
-  <div class="form-row">
-    <div class="form-group>
+        <label>Person's Name*</label>
+    <div class="row">
     <div class="col">
-    <input type="text" class="form-control form-control-sm" id="FirstName"placeholder="First Name" name="First">
-  </div>
+    <input type="text" class="form-control form-control-sm" id="FirstName"placeholder="First Name" name="First" required>
+		<div class="valid-feedback">
+        Looks good!
+      </div>
+			<div class="invalid-feedback">
+	Please Enter First Name!
+</div>
+	</div>
     <div class="col">
-    <input type="text" class="form-control form-control-sm" id="LastName" placeholder="Last Name">
-    </div>
+    <input type="text" class="form-control form-control-sm" id="LastName" placeholder="Last Name" required>
+		<div class="valid-feedback">
+        Looks good!
+      </div>
+			<div class="invalid-feedback">
+	Please Enter Second Name!
+</div>
+		</div>
   </div><br>
 
-  <label>Contact No.</label>
-<div class="form-row"
-    <div class="form-group">
-      <div class="col" id="no">
-      <input type="text" class="form-control form-control-sm" placeholder="+91" style="width:50px;">
+  <label>Contact No.*</label>
+    <div class="row">
+      <div class="col-md-1" id="no">
+      <input type="text" class="form-control form-control-sm" placeholder="+91" required>
       </div>
       <div class="col">
-      <input type="text" class="form-control form-control-sm" placeholder="10 digit no" style="width:300px;"> 
-      </div>
+      <input type="text" class="form-control form-control-sm" placeholder="10 digit no" required>
+			<div class="valid-feedback">
+	        Looks good!
+	      </div>
+				<div class="invalid-feedback">
+		Please Enter Your Contact No.!
+	</div>
+			</div>
       </div><br>
-    <label>Relationship</label>
-    <div class="form-group">
-      <input type="text" class="form-control form-control-sm" placeholder="Relationship">
-    </div>
+    <label>Relationship*</label>
+    <div class="row">
+			<div class="col">
+      <input type="text" class="form-control form-control-sm" placeholder="Relationship" required>
+			<div class="valid-feedback">
+	        Looks good!
+	      </div>
+				<div class="invalid-feedback">
+		Please Specify Relationship!
+	</div>
+		</div>
+		</div>
 
     </div>
 </div><br>
@@ -104,31 +146,38 @@
 <div class="card">
     <div class="card-body">
         <H2 align="center">Current Bank Details</H2>
-        <label>Name of Bank</label>
-    <div class="form-group">
-      <input type="text" class="form-control form-control-sm" placeholder="Name of Bank">
-    </div>
+        <label>Name of Bank*</label>
+    <div class="row">
+			<div class="col">
+      <input type="text" class="form-control form-control-sm" placeholder="Name of Bank" required>
+		</div>
+		</div>
 
-    <label>A/C Number</label>
-    <div class="form-group">
-      <input type="text" class="form-control form-control-sm" placeholder="Account Number">
+    <label>A/C Number*</label>
+    <div class="row">
+			<div class="col">
+      <input type="text" class="form-control form-control-sm" placeholder="Account Number" required>
     </div>
+	</div>
 
-    <label>Name of Branch and Address</label>
-    <div class="form-group">
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <label>Name of Branch and Address*</label>
+    <div class="row">
+			<div class="col">
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
     </div>
-
-    <label>IFSC Code</label>
-    <div class="form-group">
-      <input type="text" class="form-control form-control-sm" placeholder="IFSC Code">
+	</div>
+    <label>IFSC Code*</label>
+    <div class="row">
+			<div class="col">
+      <input type="text" class="form-control form-control-sm" placeholder="IFSC Code" required>
     </div>
+</div>
 
-
-    <label>PAN</label>
-    <div class="form-group">
-      <input type="text" class="form-control form-control-sm" placeholder="PAN">
-    </div>
+    <label>PAN*</label>
+    <div class="row">
+			<div class="col">
+      <input type="text" class="form-control form-control-sm" placeholder="PAN" required>
+    </div></div>
     </div>
 </div><br>
 
@@ -155,12 +204,58 @@
 </form>
 </div>
 </div>
-<style >
+</div>
+</div>
+
+<!-- Include jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include Date Range Picker -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+<script>
+    $(document).ready(function(){
+        var date_input=$('input[name="dateofjoin"]'); //our date input has the name "date"
+        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+        date_input.datepicker({
+            format: 'dd/mm/yyyy',
+            container: container,
+            todayHighlight: true,
+            autoclose: true,
+        })
+    })
+</script>
+
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+
+<style>
 .container-fluid {
   margin-top: 2%;
-  height: 500px;
-  width: 500px;
-}	
+
+  width: 80%;
+}
 
 .rounded {
 	height: 100px;
