@@ -106,10 +106,10 @@
 
 		<div class="row">
     <div class="col-sm-1">
-	<img src="https://s3.amazonaws.com/assets.mockflow.com/app/wireframepro/company/Ccd93f03b960b47acafb08dcdf807ffe6/projects/Mf0bf76458dd5804b112b57e7b71555261544440976320/images/Mf5633e04a5f88e6a1ec9c8263ad1b75c1544443777771" class="rounded float-left" alt="Male">
+	<img id="male" src="https://s3.amazonaws.com/assets.mockflow.com/app/wireframepro/company/Ccd93f03b960b47acafb08dcdf807ffe6/projects/Mf0bf76458dd5804b112b57e7b71555261544440976320/images/Mf5633e04a5f88e6a1ec9c8263ad1b75c1544443777771" class="rounded float-left" alt="Male">
 	</div>
 	<div class="col-sm-2">
-	<img src="https://s3.amazonaws.com/assets.mockflow.com/app/wireframepro/company/Ccd93f03b960b47acafb08dcdf807ffe6/projects/Mf0bf76458dd5804b112b57e7b71555261544440976320/images/M19314925f888ceaa1be530d87bf61dbd1544443998830" class="rounded float-right" alt="Female">
+	<img id="female" src="https://s3.amazonaws.com/assets.mockflow.com/app/wireframepro/company/Ccd93f03b960b47acafb08dcdf807ffe6/projects/Mf0bf76458dd5804b112b57e7b71555261544440976320/images/M19314925f888ceaa1be530d87bf61dbd1544443998830" class="rounded float-right" alt="Female">
 	</div>
 	</div>
 
@@ -409,6 +409,13 @@
 </script>
 
 
+<script>
+$('img').click(function(){
+	$('.selected').removeClass('selected');
+	$(this).addClass('selected');
+});
+</script>
+
 <style >
 .container-fluid {
   margin-top: 2%;
@@ -417,6 +424,10 @@
 .rounded {
 	height: 90px;
 	width: 90px;
+}
+
+.selected{
+    box-shadow:0px 12px 22px 1px #333;
 }
 </style>
 <script src="js.js">
